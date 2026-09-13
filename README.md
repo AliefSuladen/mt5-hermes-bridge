@@ -31,18 +31,22 @@ This project explores how an AI agent can interact with market data, account inf
 ┌─────────────────────┐
 │    MetaTrader 5     │
 └─────────────────────┘
-Features
-Retrieve MT5 account status
-Retrieve live bid/ask prices
-Retrieve OHLCV candles
-Retrieve open positions
-Retrieve risk status
-Retrieve symbol trading constraints
-Execute market BUY/SELL orders
-Close positions by exact ticket
-Support idempotency identifiers
-Read-only position monitoring
-Environment-based API credentials
+```
+
+## Features
+
+- Retrieve MT5 account status
+- Retrieve live bid/ask prices
+- Retrieve OHLCV candles
+- Retrieve open positions
+- Retrieve risk status
+- Retrieve symbol trading constraints
+- Execute market BUY/SELL orders
+- Close positions by exact ticket
+- Support idempotency identifiers
+- Read-only position monitoring
+- Environment-based API credentials
+
 Available Tools
 Tool	Description
 mt5_account	Get MT5 account status
@@ -125,7 +129,7 @@ Trading permission
 
 The monitoring script is read-only and does not execute trades.
 
-Example Workflow
+## Example Workflow
 
 A typical workflow can be represented as:
 
@@ -151,7 +155,9 @@ A typical workflow can be represented as:
           │
           ▼
 8. Trade execution is verified
-Project Structure
+## Project Structure
+
+```text
 mt5-hermes-bridge/
 ├── .env.example
 ├── .gitignore
@@ -168,6 +174,7 @@ mt5-hermes-bridge/
 │
 └── scripts/
     └── mt5_position_update.py
+```
 Design Principles
 
 This project follows several principles:
