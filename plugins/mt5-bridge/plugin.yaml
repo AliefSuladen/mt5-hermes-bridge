@@ -1,0 +1,14 @@
+name: mt5-bridge
+version: 1.1.0
+description: Connect Hermes Agent to MetaTrader 5 through the MT5 trading bridge
+provides_tools:
+  - mt5_account
+  - mt5_price
+  - mt5_candles
+  - mt5_positions
+  - mt5_risk
+  - mt5_symbol_info
+  - mt5_trade
+  - mt5_close_position
+python_dependencies:
+  - requests>=2.0,<3
