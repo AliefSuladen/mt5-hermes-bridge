@@ -1,0 +1,29 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Logs / runtime data
+*.log
+logs/
+sessions/
+cron/output/
+
+# Local configuration
+config.yaml
+config.yaml.bak*
+
+# Backups
+*.bak
+*.backup
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
